@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap');
+
+
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("../../fonts/Gilroy-Regular.ttf");
+  font-family: "Gilroy-Regular";
+  font-weight: 400;
+}
+
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("../../fonts/Gilroy-Bold.ttf");
+  font-family: "Gilroy-Bold";
+  font-weight: 400;
+}
+
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("../../fonts/Gilroy-SemiBold.ttf");
+  font-family: "Gilroy-SemiBold";
+  font-weight: 400;
+}
+
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("../../fonts/Gilroy-Medium.ttf");
+  font-family: "Gilroy-Medium";
+  font-weight: 400;
+}
+
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("../../fonts/Gilroy-Light.ttf");
+  font-family: "Gilroy-Light";
+  font-weight: 400;
+}
+
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("../../fonts/Gilroy-MediumItalic.ttf");
+  font-family: "Gilroy-MediumItalic";
+  font-weight: 400;
+}
+
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("../../fonts/Gilroy-ThinItalic.ttf");
+  font-family: "Gilroy-ThinItalic";
+  font-weight: 400;
+}

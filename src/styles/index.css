@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --section-padding: clamp(5em, 21vh, 12em);
+  --container-padding: clamp(2.5em, 8vw, 8em);
+  --gap-padding: clamp(1.5em, 4vw, 2.5em);
+}
+
+@media (max-width: 540px) {
+  :root {
+    --section-padding: max(2.5em, 12vh);
+  }
+}
+
+@media (max-width: 1200px) {
+  :root {
+    --container-padding: 6vw;
+  }
+}
+
+.font-playfair {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Gilroy-Regular", sans-serif;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+  color: #fff;
+}
+
+.reveal .parent {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.reveal .parent .child {
+  display: block;
+}
+
+.parent .child span {
+  display: inline-block;
+}
+
+#nav a:hover #line1 {
+  width: 100%;
+}
+
+#nav a:hover #line2 {
+  width: 0;
+}
+
+#work {
+  transition: background-color cubic-bezier(0.19, 1, 0.22, 1) 2s;
+}
+
+.cnt img {
+  transition: filter cubic-bezier(0.19, 1, 0.22, 1) 2s;
+  width: 105%;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-appearance: none !important;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #16C47F;
+  border-radius: 5px;
+}
