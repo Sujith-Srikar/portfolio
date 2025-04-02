@@ -15,8 +15,27 @@ const Navigation = () => {
       id="nav"
       className="flex items-center justify-between px-[5vw] w-full h-[100px]"
     >
-      <a href="#" className="relative text-white uppercase text-xs font-light">
+      <a
+        href="#top"
+        className="relative text-white uppercase text-xs font-light"
+        onClick={(e) => handleNavClick(e, "top")}
+      >
         Sujith Srikar
+        <span
+          id="line1"
+          className="line absolute bottom-0 left-0 w-0 h-px bg-white transition-all duration-1000 delay-300"
+        ></span>
+        <span
+          id="line2"
+          className="line absolute bottom-0 right-0 w-full h-px bg-white transition-all duration-1000"
+        ></span>
+      </a>
+      <a
+        href="#about"
+        className="relative text-white uppercase text-xs font-light hidden md:block"
+        onClick={(e) => handleNavClick(e, "about")}
+      >
+        About
         <span
           id="line1"
           className="line absolute bottom-0 left-0 w-0 h-px bg-white transition-all duration-1000 delay-300"
@@ -29,7 +48,7 @@ const Navigation = () => {
       <a
         href="#work"
         className="relative text-white uppercase text-xs font-light hidden md:block"
-        onClick={(e) => handleNavClick(e, "home")}
+        onClick={(e) => handleNavClick(e, "work")}
       >
         Projects
         <span
@@ -41,21 +60,12 @@ const Navigation = () => {
           className="line absolute bottom-0 right-0 w-full h-px bg-white transition-all duration-1000"
         ></span>
       </a>
+
       <a
-        href="#"
-        className="relative text-white uppercase text-xs font-light hidden md:block"
+        href="#contact"
+        className="relative text-white uppercase text-xs font-light"
+        onClick={(e) => handleNavClick(e, "contact")}
       >
-        Socials
-        <span
-          id="line1"
-          className="line absolute bottom-0 left-0 w-0 h-px bg-white transition-all duration-1000 delay-300"
-        ></span>
-        <span
-          id="line2"
-          className="line absolute bottom-0 right-0 w-full h-px bg-white transition-all duration-1000"
-        ></span>
-      </a>
-      <a href="#" className="relative text-white uppercase text-xs font-light">
         Contact
         <span
           id="line1"

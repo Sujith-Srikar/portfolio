@@ -19,34 +19,45 @@ function FeaturedWork() {
     {
       index: 0,
       src: "/images/watchpool-desktop.png",
-      alt: "chess game",
+      alt: "watchpool",
       name: "WatchPool",
-      description: "It is a multiplayer chess game",
+      description:
+        "It is a place where friends can come to listen to music and watch videos at the same time",
       className: "md:col-span-2",
+      link: "https://watchpool.vercel.app/",
+      githubLink: "https://github.com/Sujith-Srikar/WatchPool",
     },
     {
       index: 2,
       src: "/images/mern-init-cli.png",
-      alt: "unseen",
+      alt: "MERN-Init-Cli",
       name: "Mern-Init-Cli",
-      description: "Resource Library",
+      description:
+        "It is a CLI tool that helps you quickly set up a full-stack MERN project",
       className: "md:col-span-1",
+      link: "https://www.npmjs.com/package/mern-init-cli",
+      githubLink: "https://github.com/Sujith-Srikar/mern-init-cli",
     },
     {
       index: 3,
       src: "/images/ochi.png",
-      alt: "ClaimIt",
+      alt: "Ochi",
       name: "Ochi",
-      description: "Claim your uncliamed Crypto Airdrops",
+      description: "Frontend Clone of a design agency website - OCHI",
       className: "md:col-span-1",
+      link: "https://ochi-gilt.vercel.app/",
+      githubLink: "https://github.com/Sujith-Srikar/Ochi",
     },
     {
       index: 4,
       src: "/images/tinytag.png",
-      alt: "Foodio",
+      alt: "TinyTag",
       name: "TinyTag",
-      description: "Resturant Website",
+      description:
+        "It is a tool that allows users to shorten URLs and generate QR codes with custom aliases",
       className: "md:col-span-2",
+      link: "https://tiny-tag.vercel.app/",
+      githubLink: "https://github.com/Sujith-Srikar/TinyTag",
     },
   ];
 
@@ -55,11 +66,11 @@ function FeaturedWork() {
       <div
         ref={container}
         id="work"
-        className="transition-colors duration-2000 py-[8vh] w-full min-h-[100vh] relative"
+        className="transition-colors duration-2000 pb-[8vh] w-full min-h-[100vh] relative"
         style={{ backgroundColor: bgColor }}
       >
         {/* Header Section */}
-        <div className="flex flex-col md:flex-row justify-between items-center md:px-12">
+        <div className="flex flex-col md:flex-row justify-between py-[10vh] items-center md:px-12">
           <motion.div
             initial="initial"
             whileInView="hovered"
@@ -106,7 +117,6 @@ function FeaturedWork() {
           </svg>
         </div>
 
-        {/* Bento Grid Section with increased width and larger auto-rows */}
         <BentoGrid className="max-w-7xl mx-auto md:auto-rows-[25rem] my-12 px-4 md:px-0">
           {cardData.map((card) => (
             <BentoGridItem
@@ -116,12 +126,13 @@ function FeaturedWork() {
               image={card.src}
               alt={card.alt}
               className={card.className}
+              link={card.link}
+              githubLink={card.githubLink}
             />
           ))}
         </BentoGrid>
       </div>
 
-      {/* GSAP / Framer Motion Scroll Animation */}
       <motion.div
         style={{ height }}
         className="circle-container z-10 left-0 w-screen relative h-[20px] bg-red-500 block"

@@ -109,9 +109,15 @@ export default function Contact() {
               <p className="z-10">kandregulasujith@gmail.com</p>
             </RoundedButton>
           </a>
-          <RoundedButton>
-            <p className="z-10">+31 6 27 84 74 30</p>
-          </RoundedButton>
+          <a
+            href="https://x.com/Sujith88540606"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <RoundedButton>
+              <p className="z-10">X - Twitter</p>
+            </RoundedButton>
+          </a>
         </div>
         <div
           style={{

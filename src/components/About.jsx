@@ -28,6 +28,7 @@ function About() {
         data-scroll
         data-scroll-section
         className="pb-[20vh]"
+        id="about"
       >
         <div className="memoji flex items-center justify-center w-full h-24 rounded-full mb-[10px]">
           <div className="w-24 h-24">
