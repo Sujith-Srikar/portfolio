@@ -7,7 +7,7 @@ const HomeSection = () => {
       data-scroll
       data-scroll-section
       id="home"
-      className="relative w-full h-screen p-3 md:pt-[2vh] md:px-[5rem] leading-[1.2] text-gray-100"
+      className="relative w-full h-screen p-3 md:pt-[10vh] md:px-[5rem] leading-[1.2] text-gray-100"
     >
       {/* Visionary Section */}
       <div className="relative mt-[6vh] flex flex-col md:flex-row md:justify-between items-center w-full leading-tight">

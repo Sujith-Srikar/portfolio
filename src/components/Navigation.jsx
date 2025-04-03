@@ -13,21 +13,21 @@ const Navigation = () => {
       data-scroll
       data-scroll-section
       id="nav"
-      className="flex items-center justify-between px-[5vw] w-full h-[100px]"
+      className="fixed z-10 backdrop-blur-md flex items-center justify-between px-[5vw] w-full h-[80px]"
     >
       <a
-        href="#top"
+        href="#main"
         className="relative text-white uppercase text-xs font-light"
-        onClick={(e) => handleNavClick(e, "top")}
+        onClick={(e) => handleNavClick(e, "main")}
       >
         Sujith Srikar
         <span
           id="line1"
-          className="line absolute bottom-0 left-0 w-0 h-px bg-white transition-all duration-1000 delay-300"
+          className="line line1 absolute bottom-0 left-0 w-0 h-px bg-white transition-all duration-1000 delay-300"
         ></span>
         <span
           id="line2"
-          className="line absolute bottom-0 right-0 w-full h-px bg-white transition-all duration-1000"
+          className="line line2 absolute bottom-0 right-0 w-full h-px bg-white transition-all duration-1000"
         ></span>
       </a>
       <a
@@ -38,11 +38,11 @@ const Navigation = () => {
         About
         <span
           id="line1"
-          className="line absolute bottom-0 left-0 w-0 h-px bg-white transition-all duration-1000 delay-300"
+          className="line line1 absolute bottom-0 left-0 w-0 h-px bg-white transition-all duration-1000 delay-300"
         ></span>
         <span
           id="line2"
-          className="line absolute bottom-0 right-0 w-full h-px bg-white transition-all duration-1000"
+          className="line line2 absolute bottom-0 right-0 w-full h-px bg-white transition-all duration-1000"
         ></span>
       </a>
       <a
@@ -53,11 +53,11 @@ const Navigation = () => {
         Projects
         <span
           id="line1"
-          className="line absolute bottom-0 left-0 w-0 h-px bg-white transition-all duration-1000 delay-300"
+          className="line line1 absolute bottom-0 left-0 w-0 h-px bg-white transition-all duration-1000 delay-300"
         ></span>
         <span
           id="line2"
-          className="line absolute bottom-0 right-0 w-full h-px bg-white transition-all duration-1000"
+          className="line line2 absolute bottom-0 right-0 w-full h-px bg-white transition-all duration-1000"
         ></span>
       </a>
 
@@ -69,11 +69,11 @@ const Navigation = () => {
         Contact
         <span
           id="line1"
-          className="line absolute bottom-0 left-0 w-0 h-px bg-white transition-all duration-1000 delay-300"
+          className="line line1 absolute bottom-0 left-0 w-0 h-px bg-white transition-all duration-1000 delay-300"
         ></span>
         <span
           id="line2"
-          className="line absolute bottom-0 right-0 w-full h-px bg-white transition-all duration-1000"
+          className="line line2 absolute bottom-0 right-0 w-full h-px bg-white transition-all duration-1000"
         ></span>
       </a>
     </nav>

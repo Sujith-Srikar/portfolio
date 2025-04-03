@@ -75,7 +75,7 @@ function App() {
             height: "100%",
             top: 0,
             duration: 1,
-            delay: -0.8,
+            delay: -1,
             ease: "circ.easeInOut",
           })
           .to("#green", {
@@ -119,12 +119,12 @@ function App() {
   }, []);
 
   return (
-    <div className="main w-full overflow-hidden" ref={container}>
-      <CustomCursor /> {/* Add CustomCursor here to make it global */}
+    <div id="main" className="main w-full overflow-hidden" ref={container}>
+      <CustomCursor />
       <Loader />
       <div
         id="green"
-        className="absolute top-full w-full h-0 bg-[#14CF93] z-99999"
+        className="fixed top-full w-full h-0 bg-[#14CF93] z-50"
       ></div>
       <Navigation />
       <HomeSection />

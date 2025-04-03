@@ -56,16 +56,12 @@ body {
   display: inline-block;
 }
 
-#nav a:hover #line1 {
+#nav a:hover .line1 {
   width: 100%;
 }
 
-#nav a:hover #line2 {
+#nav a:hover .line2 {
   width: 0;
-}
-
-#work {
-  transition: background-color cubic-bezier(0.19, 1, 0.22, 1) 2s;
 }
 
 .cnt img {

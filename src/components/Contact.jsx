@@ -16,6 +16,7 @@ export default function Contact() {
 
   return (
     <div
+      id="contact"
       data-scroll
       data-scroll-section
       style={{ y }}
@@ -33,7 +34,6 @@ export default function Contact() {
           <span className="flex items-center">
             <div className="w-[100px] h-[100px] relative rounded-full overflow-hidden">
               <img
-                fill={true}
                 alt="image"
                 src="../../images/sujith.jpg"
                 className="object-cover"
