@@ -56,11 +56,11 @@ body {
   display: inline-block;
 }
 
-#nav a:hover .line1 {
+#nav a:hover #line1 {
   width: 100%;
 }
 
-#nav a:hover .line2 {
+#nav a:hover #line2 {
   width: 0;
 }
 

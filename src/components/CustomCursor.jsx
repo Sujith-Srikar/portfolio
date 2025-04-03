@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { motion, useMotionValue, useSpring } from "framer-motion";
 
 const CustomCursor = () => {
+  const [isLargeScreen, setIsLargeScreen] = useState(false);
   const [hovered, setHovered] = useState(false);
   const cursorX = useMotionValue(-100);
   const cursorY = useMotionValue(-100);
@@ -28,6 +29,19 @@ const CustomCursor = () => {
       window.removeEventListener("cursorHover", handleCursorHover);
     };
   }, [cursorX, cursorY]);
+
+  useEffect(() => {
+    const checkScreenSize = () => {
+      setIsLargeScreen(window.innerWidth >= 768);
+    };
+
+    checkScreenSize();
+    window.addEventListener("resize", checkScreenSize);
+
+    return () => window.removeEventListener("resize", checkScreenSize);
+  }, []);
+
+  if (!isLargeScreen) return null;
 
   const cursorVariants = {
     default: {
