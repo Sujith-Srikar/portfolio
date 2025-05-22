@@ -1,11 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion, useMotionValue, useSpring } from "framer-motion";
-import { prefersReducedMotion } from "../../lib/util.js";
 
 const CustomCursor = () => {
-  if (prefersReducedMotion()) {
-    return null; // Don't render the cursor if motion is reduced
-  }
 
   const [isLargeScreen, setIsLargeScreen] = useState(false);
   const [hovered, setHovered] = useState(false);
