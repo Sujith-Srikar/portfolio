@@ -1,7 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { motion, useMotionValue, useSpring } from "framer-motion";
+import { prefersReducedMotion } from "../../lib/util.js";
 
 const CustomCursor = () => {
+  if (prefersReducedMotion()) {
+    return null; // Don't render the cursor if motion is reduced
+  }
+
   const [isLargeScreen, setIsLargeScreen] = useState(false);
   const [hovered, setHovered] = useState(false);
   const cursorX = useMotionValue(-100);
@@ -47,11 +52,11 @@ const CustomCursor = () => {
     default: {
       scale: 1,
       opacity: 1,
-      mixBlendMode: "difference",
+      mixBlendMode: "normal", // Changed from "difference"
     },
     hovered: {
       scale: 5,
-      opacity: 0.9,
+      opacity: 1, // Changed from 0.9
       mixBlendMode: "normal",
     },
   };
@@ -68,16 +73,12 @@ const CustomCursor = () => {
       transition={{ type: "spring", stiffness: 200, damping: 30 }}
     >
       <div
-        className="w-6 h-6 rounded-full bg-white border border-white"
-        style={{
-          backdropFilter: hovered ? "blur(10px)" : "none",
-          filter: hovered ? "blur(0.2px)" : "none",
-        }}
+        className="w-6 h-6 rounded-full bg-white border border-gray-700" // Changed border color and removed inline style
       />
 
       {hovered && (
         <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
-          <span className="text-[4px] text-black">View Live</span>
+          <span className="text-[6px] text-black">View Live</span> 
         </div>
       )}
     </motion.div>

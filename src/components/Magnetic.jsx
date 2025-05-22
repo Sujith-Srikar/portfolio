@@ -10,11 +10,11 @@ const Magnetic = ({ children }) => {
 
     const xTo = gsap.quickTo(element, "x", {
       duration: 1,
-      ease: "elastic.out(1, 0.3)",
+      ease: "elastic.out(1, 0.5)", // Changed from elastic.out(1, 0.3)
     });
     const yTo = gsap.quickTo(element, "y", {
       duration: 1,
-      ease: "elastic.out(1, 0.3)",
+      ease: "elastic.out(1, 0.5)", // Changed from elastic.out(1, 0.3)
     });
 
     const handleMouseMove = (e) => {
