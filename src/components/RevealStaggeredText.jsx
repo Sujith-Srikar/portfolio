@@ -12,8 +12,8 @@ import { motion } from "framer-motion";
 //   );
 // };
 
-const DURATION = 0.25;
-const STAGGER = 0.025;
+const DURATION = 0.4; // Changed from 0.25
+const STAGGER = 0.03; // Changed from 0.025
 
 const RevealStaggeredText = ({ children }) => {
   return (
