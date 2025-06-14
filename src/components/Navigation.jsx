@@ -17,7 +17,7 @@ const Navigation = () => {
     >
       <a
         href="#main"
-        className="relative text-white uppercase text-xs font-light"
+        className="relative text-white uppercase text-[15px] font-light"
         onClick={(e) => handleNavClick(e, "main")}
       >
         Sujith Srikar
@@ -32,7 +32,7 @@ const Navigation = () => {
       </a>
       <a
         href="#about"
-        className="relative text-white uppercase text-xs font-light hidden md:block"
+        className="relative text-white uppercase text-[15px] font-light hidden md:block"
         onClick={(e) => handleNavClick(e, "about")}
       >
         About
@@ -47,7 +47,7 @@ const Navigation = () => {
       </a>
       <a
         href="#work"
-        className="relative text-white uppercase text-xs font-light hidden md:block"
+        className="relative text-white uppercase text-[15px] font-light hidden md:block"
         onClick={(e) => handleNavClick(e, "work")}
       >
         Projects
@@ -62,7 +62,7 @@ const Navigation = () => {
       </a>
       <a
         href="#contact"
-        className="relative text-white uppercase text-xs font-light"
+        className="relative text-white uppercase text-[15px] font-light"
         onClick={(e) => handleNavClick(e, "contact")}
       >
         Contact

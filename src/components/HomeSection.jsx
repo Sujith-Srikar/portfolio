@@ -15,19 +15,19 @@ const HomeSection = () => {
           Visionary
         </h1>
         <div className="hidden md:flex flex-col items-end">
-          <h5 className="reveal opacity-40 text-xs font-medium">
+          <h5 className="reveal opacity-40 text-sm font-medium">
             CURRENTLY AVAILABLE FOR
           </h5>
-          <h5 className="reveal opacity-40 text-xs font-medium">
-            &gt;FREELANCE WORLDWIDE
+          <h5 className="reveal opacity-40 text-sm font-medium">
+            &gt;WORK WORLDWIDE
           </h5>
         </div>
-        <div className="hidden md:flex flex-col items-end">
+        {/* <div className="hidden md:flex flex-col items-end">
           <h5 className="reveal opacity-40 text-xs font-medium">
             MY LOCAL TIME 8:39
           </h5>
           <h5 className="reveal opacity-40 text-xs font-medium">GMT (+5:30)</h5>
-        </div>
+        </div> */}
       </div>
 
       {/* Creator Section */}
