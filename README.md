@@ -1,4 +1,4 @@
-# Live Demo - [Sujith Srikar](https://sujith-srikar.vercel.app/)
+# Live Demo - [Sujith Srikar](https://sujithsrikar.me/)
 
 # Hey, I'm Sujith Srikar  
 
